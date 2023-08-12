@@ -1,0 +1,301 @@
+body {
+    background: hsl(221, 100%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    overflow: hidden;
+}
+
+main {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.final-score h2:first-child {
+    margin-bottom: 20px;
+}
+
+.final-score h2 {
+    margin: 0;
+}
+
+.final-score, .final-score div, .scores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.final-score, .main-scores {
+    height: 28em;
+    width: 22em;
+    border-radius: 30px;
+}
+
+.final-score {
+    color: hsl(221, 100%, 96%);
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.final-score div {
+    background: linear-gradient( to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    width: 10em;
+    height: 10em;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+.final-score div p:first-child, .final-score div p:last-child {
+    margin: 0;
+    line-height: 1.1;
+}
+
+.final-score div p:first-child {
+    font-weight: 800;
+    font-size: 4em;
+    color: hsl(0, 0%, 100%);
+}
+
+.final-score div p{
+    color: hsl(220, 3%, 58%);
+}
+
+.final-score p {
+    text-align: center;
+    margin: 20px 60px;
+    font-weight: 500;
+} 
+
+/**/
+
+
+.shape {
+    position: absolute;
+    height: 28em;
+    width: 4em;
+    left: 20.5em;
+    z-index: -1;
+    background: hsl(0, 0%, 100%);
+}
+
+
+/**/
+
+.main-scores {
+    display: flex;
+    justify-content: center;
+    background: hsl(0, 0%, 100%);
+}
+
+.scores {
+    align-items: start;
+}
+
+.scores h2 {
+    margin: 40px 0 20px 0;
+}
+
+.scores .categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15em;
+}
+
+.scores .categories .category, .scores .categories .category div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.scores .categories .category {
+    width: 15em;
+    height: 45px;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 0 13px;
+}
+
+.scores .categories .category p {
+    color: hsl(220, 3%, 58%);
+    font-weight: 700;
+}
+
+.scores .categories .category p span {
+    font-weight: 800;
+    color: #000;
+}
+
+.scores .categories .category div img {
+    margin-right: 13px;
+}
+
+/*bg and f*/
+
+.scores .categories .reaction {
+    background: hsla(0, 100%, 67%, 10%);
+}
+
+.scores .categories .reaction div p {
+    color: hsl(0, 100%, 67%);
+}
+
+.scores .categories .memory {
+    background: hsla(39, 100%, 56%, 10%);
+}
+
+.scores .categories .memory div p {
+    color: hsl(39, 100%, 56%);
+}
+
+.scores .categories .verbal {
+    background: hsla(166, 100%, 37%, 10%);
+}
+
+.scores .categories .verbal div p {
+    color: hsl(166, 100%, 37%);
+}
+
+.scores .categories .visual {
+    background: hsla(234, 85%, 45%, 10%);
+}
+
+.scores .categories .visual div p {
+    color: hsl(234, 85%, 45%);
+}
+
+/**/
+
+.scores a {
+    background: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    border-radius: 28px;
+    width: 16.7em;
+    padding: 0.8em 0;
+    margin: 35px 0 50px 0;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.scores a:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+footer {
+    margin-top: 30em;
+    z-index: 1;
+}
+
+
+@media  screen and (max-width: 800px) {
+    
+    @media  screen and (max-height: 800px) {
+        body {
+            overflow: auto;
+        }
+    
+        .main-scores {
+            padding: 0%;
+        } 
+    }
+
+    body {
+        background: hsl(0, 0%, 100%);
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .final-score h2 {
+        margin-top: 20px;
+    }
+
+    .final-score h2:first-child {
+        margin: 0 0 20px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .final-score p {
+        font-size: 14px;
+    } 
+
+    .final-score, .main-scores {
+        width: 100%;
+    }
+
+    .final-score {
+        height: 20em;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .final-score div {
+        width: 7em;
+        height: 7em;
+        margin: 0;
+    }
+
+    .final-score div p:first-child {
+        font-size: 2.5em;
+        margin-bottom: 7px;
+    }
+    
+    .final-score p {
+        margin: 10px 60px 30px;
+    } 
+
+    .main-scores {
+        border-radius: 0;
+    } 
+
+    main {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .shape {
+        width: 100%;
+        height: 4em;
+        top: 280px;
+        left: 0;
+    }
+
+    .scores h2 {
+        font-size: 17px;
+        margin: 0 0 30px 0;
+    }
+
+    .scores {
+        height: 30em;
+    }
+
+    .scores .categories {
+        height: 18em;
+    }
+
+    .scores .categories .category {
+        width: 18em;
+        height: 60px;
+    }
+
+    .scores a {
+        width: 19.7em;
+        margin: 30px 0 0 0;
+    }
+
+    footer {
+        margin-top: 68em;
+        font-size: 11px;
+    }
+    
+}
